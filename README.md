@@ -1,2 +1,2 @@
 # mathCsharp
-Cours d'initiation au C# avec un librairie sur les mathématiques
+Cours d'initiation au C# avec une librairie sur les mathématiques
