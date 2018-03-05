@@ -11,17 +11,17 @@ namespace MathConsole
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Bonjour.");
+            Console.WriteLine("Bonjour.");
 
             Fraction f1 = SaisirFraction("Saisir une fraction (A/B):");
             Fraction f2 = SaisirFraction("Saisir une autre fraction:");
 
-            System.Console.Write("Résultat: {0} + {1} = ", f1, f2);
+            Console.Write("Résultat: {0} + {1} = ", f1, f2);
             f1.Ajouter(f2);
             f1.Simplifier();
-            System.Console.WriteLine("{0}", f1);
+            Console.WriteLine("{0}", f1);
 
-            System.Console.ReadLine();
+            Console.ReadLine();
         }
 
 
@@ -30,15 +30,15 @@ namespace MathConsole
             Fraction f = null;
             while (f == null)
             {
-                System.Console.WriteLine(message);
-                string input = System.Console.ReadLine();
+                Console.WriteLine(message);
+                string input = Console.ReadLine();
                 try
                 {
                     f = new Fraction(input);
                 }
                 catch (Exception ex)
                 {
-                    System.Console.WriteLine("Erreur: {0}", ex.Message);
+                    Console.WriteLine("Erreur: {0}", ex.Message);
                 }
             }
             return f;
