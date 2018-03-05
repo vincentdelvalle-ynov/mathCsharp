@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathConsole", "MathConsole\MathConsole.csproj", "{F568A46C-BD7C-433F-877B-E303F943EF12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.csproj", "{73129837-119B-4524-AB43-CFEF170E7282}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLibTest", "MathLibTest\MathLibTest.csproj", "{E782F45F-8767-4F3E-B3EB-31EDBEDFF56A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F568A46C-BD7C-433F-877B-E303F943EF12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F568A46C-BD7C-433F-877B-E303F943EF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F568A46C-BD7C-433F-877B-E303F943EF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F568A46C-BD7C-433F-877B-E303F943EF12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73129837-119B-4524-AB43-CFEF170E7282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73129837-119B-4524-AB43-CFEF170E7282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73129837-119B-4524-AB43-CFEF170E7282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73129837-119B-4524-AB43-CFEF170E7282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E782F45F-8767-4F3E-B3EB-31EDBEDFF56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E782F45F-8767-4F3E-B3EB-31EDBEDFF56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E782F45F-8767-4F3E-B3EB-31EDBEDFF56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E782F45F-8767-4F3E-B3EB-31EDBEDFF56A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5489225-89A2-4072-B044-D194AC5D24F5}
+	EndGlobalSection
+EndGlobal

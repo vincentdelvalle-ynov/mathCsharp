@@ -1,0 +1,10 @@
+.vs/
+MathConsole/bin/
+MathConsole/obj/
+MathLib/bin/
+MathLib/obj/
+MathLibTest/bin/
+MathLibTest/obj/
+packages
+
+*.dll
