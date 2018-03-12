@@ -13,6 +13,58 @@ namespace MathConsole
         {
             Console.WriteLine("Bonjour.");
 
+            //ExempleFractions();
+            ExempleMatrice();
+
+            Console.ReadLine();
+        }
+
+
+        public static void ExempleMatrice()
+        {
+            Matrice A = SaisirMatrice();
+            Matrice B = SaisirMatrice();
+
+            Matrice R = A.Multiplie(B);
+
+        }
+
+
+        public static Matrice SaisirMatrice()
+        {
+            Matrice m = null;
+
+            List<int[]> build = new List<int[]>();
+            while (SaisirMatriceLigne(build))
+            {
+
+            }
+
+            return m;
+        }
+
+        public static bool SaisirMatriceLigne(List<int[]> build)
+        {
+            string input = Console.ReadLine();
+
+
+
+            return string.IsNullOrWhiteSpace(input);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        public static void ExempleFractions()
+        {
             Fraction f1 = SaisirFraction("Saisir une fraction (A/B):");
             Fraction f2 = SaisirFraction("Saisir une autre fraction:");
 
@@ -20,8 +72,6 @@ namespace MathConsole
             f1.Ajouter(f2);
             f1.Simplifier();
             Console.WriteLine("{0}", f1);
-
-            Console.ReadLine();
         }
 
 

@@ -42,6 +42,9 @@
   <ItemGroup>
     <Compile Include="Fraction.cs" />
     <Compile Include="FractionInitException.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Matrice.cs" />
+    <Compile Include="MatriceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
