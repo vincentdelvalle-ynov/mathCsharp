@@ -108,7 +108,7 @@ namespace MathLibTest
                 { 10, 11, 12 },
             });
             
-            int[] line = m.GetLine(m.matrice, 1);
+            int[] line = m.matrice.GetLine(1);
 
             Assert.AreEqual(3, line.Length);
             Assert.AreEqual(4, line[0]);
@@ -126,7 +126,7 @@ namespace MathLibTest
                 { 10, 11, 12 },
             });
 
-            int[] column = m.GetColumn(m.matrice, 2);
+            int[] column = m.matrice.GetColumn(2);
 
             Assert.AreEqual(4, column.Length);
             Assert.AreEqual(3, column[0]);

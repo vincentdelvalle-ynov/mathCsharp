@@ -73,10 +73,10 @@ namespace MathLib
             result.ParcourirMatrice((int i,int j) =>
             {
                 // récupérer la ligne i sur this (A)
-                int[] lignesDeA = matrice.GetLine(i);
+                int[] lignesDeA = this.matrice.GetLine(i);
 
                 // récupérer la colone j sur mat (B)
-                int[] colonnesDeB = GetColumn(mat.matrice, j);
+                int[] colonnesDeB = mat.matrice.GetColumn(j);
 
                 // somme des produits ligne et colonne
                 int cumul = 0;
@@ -88,14 +88,29 @@ namespace MathLib
             return result;
         }
 
-        
-
-        public int[] GetColumn(int[,] mat, int numColumn)
+        public override string ToString()
         {
-            int[] column = new int[mat.GetLength(0)];
-            column.Parcourir(i => column[i] = mat[i, numColumn]);
-            return column;
+            StringBuilder builder = new StringBuilder();
+
+            matrice.Parcourir((i, j) =>
+            {
+                if( j == 0 )
+                {
+                    builder.Append('(');
+                }
+
+                builder.Append(string.Format(" {0,3}", matrice[i, j]));
+                
+                if( j == matrice.GetLength(1) - 1)
+                {
+                    builder.Append(" )\n");
+                }
+            });
+
+            return builder.ToString();
         }
+
+
 
     }
 }
