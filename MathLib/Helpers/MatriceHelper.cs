@@ -10,7 +10,7 @@ namespace MathLib
     /// <summary>
     /// Classe dans laquelle on range toutes nos méthodes d'extension
     /// </summary>
-    public static class Helper
+    public static class MatriceHelper
     {
 
         /// <summary>

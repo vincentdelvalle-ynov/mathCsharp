@@ -1,9 +1,11 @@
 ﻿using MathLib;
+using MathLib.JeuDeLaVie;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MathConsole
@@ -17,10 +19,39 @@ namespace MathConsole
             Console.WriteLine("");
 
             //ExempleFractions();
-            ExempleMatrice();
-
+            //ExempleMatrice();
+            ExempleJeuDeLaVie();
+            
             Console.ReadLine();
         }
+        
+
+        public static void ExempleJeuDeLaVie()
+        {
+            Console.OutputEncoding = Encoding.Unicode; // UTF-16
+            // Note: UTF-32 n'est pas supporté pour la Console...
+            
+            Console.CursorVisible = false;
+
+            Jeu jeu = new Jeu(25, 15);
+            //jeu.AjouterFigure(new FigureCarre(1, 1));
+            //jeu.AjouterFigure(new FigureClignotant(5, 6));
+            //jeu.AjouterFigure(new FigureRandom(10, 2, 10, 10));
+            jeu.AjouterFigure(new FigureRandom(0, 0, 24, 14));
+
+            while (true)
+            {
+                Console.SetCursorPosition(0, 3);
+                Console.Write(jeu);
+                jeu.Update();
+
+                Thread.Sleep(300);
+            }
+
+        }
+        
+
+
 
 
         public static void ExempleMatrice()

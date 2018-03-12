@@ -42,7 +42,14 @@
   <ItemGroup>
     <Compile Include="Fraction.cs" />
     <Compile Include="FractionInitException.cs" />
-    <Compile Include="Helper.cs" />
+    <Compile Include="Helpers\JeuHelper.cs" />
+    <Compile Include="Helpers\MatriceHelper.cs" />
+    <Compile Include="JeuDeLaVie\Figure.cs" />
+    <Compile Include="JeuDeLaVie\FigureCarre.cs" />
+    <Compile Include="JeuDeLaVie\FigureClignotant.cs" />
+    <Compile Include="JeuDeLaVie\FigureRandom.cs" />
+    <Compile Include="JeuDeLaVie\IFigure.cs" />
+    <Compile Include="JeuDeLaVie\Jeu.cs" />
     <Compile Include="Matrice.cs" />
     <Compile Include="MatriceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
