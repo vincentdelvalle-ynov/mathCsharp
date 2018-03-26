@@ -20,11 +20,37 @@ namespace MathConsole
 
             //ExempleFractions();
             //ExempleMatrice();
-            ExempleJeuDeLaVie();
+            //ExempleJeuDeLaVie();
+            ExempleSpiral();
             
             Console.ReadLine();
         }
         
+        public static void ExempleSpiral()
+        {
+
+            UlamSpiral spiral = new UlamSpiral(189);
+            System.Diagnostics.Stopwatch watch;
+
+            //
+            watch = System.Diagnostics.Stopwatch.StartNew();
+            for (int i = 0; i <= spiral.MaxCycle; i++)
+            {
+                spiral.Cycle(i);
+            }
+            watch.Stop();
+            Console.WriteLine("{0} ticks pour les cycles", watch.ElapsedTicks);
+            /**/
+
+            watch = System.Diagnostics.Stopwatch.StartNew();
+            int distance = spiral.Resolve();
+            watch.Stop();
+
+
+            Console.WriteLine("{0} ticks pour la résolution", watch.ElapsedTicks);
+            Console.WriteLine("{0} est à une distance de {1} du centre.", spiral.TargetValue, distance);
+            Console.WriteLine(spiral);
+        }
 
         public static void ExempleJeuDeLaVie()
         {

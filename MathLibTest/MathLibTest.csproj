@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="FractionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UlamSpiralTest.cs" />
     <Compile Include="TestJeuDeLaVie.cs" />
     <Compile Include="TestMatrice.cs" />
   </ItemGroup>
